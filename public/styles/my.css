@@ -1,0 +1,21 @@
+.offline_me {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+.offline_me span.name, .offline_me h6 {
+    color: #c4183c;
+}
+
+.online_me span.name, .online_me h6 {
+    color: green;
+}
+
+.home_margin {
+    padding-top: 1rem!important;
+    padding-bottom: 0px!important;
+}

@@ -1,0 +1,292 @@
+<!doctype html>
+<html class="no-js h-100" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Eagle Eye Monitor</title>
+    <meta name="description"
+        content="A high-quality &amp; free services monitoring project.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="vendor/css/fontawesome-all.css" rel="stylesheet">
+    <link href="vendor/css/googlefonts-material-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" id="main-stylesheet" data-version="1.1.0" href="styles/shards-dashboards.1.1.0.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/my.css">
+</head>
+
+<body class="h-100">
+    <div class="container-fluid">
+        <div class="row">
+            <main class="container-fluid">
+                <div class="main-navbar sticky-top bg-white">
+                    <!-- Main Navbar -->
+                    <nav class="navbar align-items-stretch navbar-light flex-md-nowrap p-0">
+                        <form action="#" class="main-navbar__search w-100 d-none d-md-flex d-lg-flex">
+                            <div class="input-group input-group-seamless ml-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                </div>
+                                <input class="navbar-search form-control" type="text" placeholder="Filter..."
+                                    aria-label="Search">
+                            </div>
+                        </form>
+                        <ul class="navbar-nav border-left flex-row ">
+                            <li class="nav-item border-right dropdown notifications">
+                                <a class="nav-link nav-link-icon text-center" href="#" role="button"
+                                    id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <div class="nav-link-icon__wrapper">
+                                        <i class="material-icons">&#xE7F4;</i>
+                                        <span class="badge badge-pill badge-danger">2</span>
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-small" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">
+                                        <div class="notification__icon-wrapper">
+                                            <div class="notification__icon">
+                                                <i class="material-icons">&#xE6E1;</i>
+                                            </div>
+                                        </div>
+                                        <div class="notification__content">
+                                            <span class="notification__category">Warning</span>
+                                            <p>Front has a degradation of
+                                                <span class="text-warning text-semibold">28%</span> in the last week.
+                                                Look after!</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="notification__icon-wrapper">
+                                            <div class="notification__icon">
+                                                <i class="material-icons">&#xE8D1;</i>
+                                            </div>
+                                        </div>
+                                        <div class="notification__content">
+                                            <span class="notification__category">Error</span>
+                                            <p>Front is offline. Uptime fall to
+                                                <span class="text-danger text-semibold">95.52%</span>. Panic!</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item notification__all text-center" href="#"> View all Events
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-nowrap px-3" data-toggle="dropdown" href="#"
+                                    role="button" aria-haspopup="true" aria-expanded="false">
+                                    <img class="user-avatar rounded-circle mr-2" src="images/eagleeye.png"
+                                        alt="User Avatar">
+                                    <span class="d-none d-md-inline-block">Eagle Eye</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-small">
+                                    <a class="dropdown-item" href="user-profile-lite.html">
+                                        <i class="material-icons">&#xE7FD;</i> Config</a>
+                                    <a class="dropdown-item" href="components-blog-posts.html">
+                                        <i class="material-icons">vertical_split</i> Option</a>
+                                    <a class="dropdown-item" href="add-new-post.html">
+                                        <i class="material-icons">note_add</i> Other Option</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item text-danger" href="#">
+                                        <i class="material-icons text-danger">&#xE879;</i> Logout </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- / .main-navbar -->
+                <div class="main-content-container container-fluid px-4">
+                    <!-- Page Header -->
+                    <div class="page-header row no-gutters py-4 home_margin">
+                    </div>
+                    <!-- End Page Header -->
+                    <!-- Small Stats Blocks -->
+                    <div class="row">
+                        <div class="col-lg col-md-6 col-sm-6 mb-4">
+                            <div class="stats-small stats-small--1 card card-small">
+                                <div class="card-body p-0 d-flex offline_me">
+                                    <div class="d-flex flex-column m-auto">
+                                        <div class="stats-small__data text-center">
+                                            <span class="stats-small__label text-uppercase name">Front</span>
+                                            <h6 class="stats-small__value count my-3">0,901s</h6>
+                                        </div>
+                                        <div class="stats-small__data">
+                                            <span
+                                                class="stats-small__percentage stats-small__percentage--decrease">98.657%</span>
+                                        </div>
+                                    </div>
+                                    <canvas height="120" class="blog-overview-stats-small-1"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg col-md-6 col-sm-6 mb-4">
+                            <div class="stats-small stats-small--1 card card-small">
+                                <div class="card-body p-0 d-flex online_me">
+                                    <div class="d-flex flex-column m-auto">
+                                        <div class="stats-small__data text-center">
+                                            <span class="stats-small__label text-uppercase name">Back</span>
+                                            <h6 class="stats-small__value count my-3">0,005s</h6>
+                                        </div>
+                                        <div class="stats-small__data">
+                                            <span
+                                                class="stats-small__percentage stats-small__percentage--increase">99,495%</span>
+                                        </div>
+                                    </div>
+                                    <canvas height="120" class="blog-overview-stats-small-2"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-6 mb-4">
+                            <div class="stats-small stats-small--1 card card-small">
+                                <div class="card-body p-0 d-flex online_me">
+                                    <div class="d-flex flex-column m-auto">
+                                        <div class="stats-small__data text-center">
+                                            <span class="stats-small__label text-uppercase name">Back DB</span>
+                                            <h6 class="stats-small__value count my-3">0,021s</h6>
+                                        </div>
+                                        <div class="stats-small__data">
+                                            <span
+                                                class="stats-small__percentage stats-small__percentage--decrease">3.8%</span>
+                                        </div>
+                                    </div>
+                                    <canvas height="120" class="blog-overview-stats-small-3"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-6 mb-4">
+                            <div class="stats-small stats-small--1 card card-small">
+                                <div class="card-body p-0 d-flex online_me">
+                                    <div class="d-flex flex-column m-auto">
+                                        <div class="stats-small__data text-center">
+                                            <span class="stats-small__label text-uppercase name">Pay Front</span>
+                                            <h6 class="stats-small__value count my-3">0,035s</h6>
+                                        </div>
+                                        <div class="stats-small__data">
+                                            <span
+                                                class="stats-small__percentage stats-small__percentage--increase">97,354%</span>
+                                        </div>
+                                    </div>
+                                    <canvas height="120" class="blog-overview-stats-small-4"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-12 mb-4">
+                            <div class="stats-small stats-small--1 card card-small">
+                                <div class="card-body p-0 d-flex online_me">
+                                    <div class="d-flex flex-column m-auto">
+                                        <div class="stats-small__data text-center">
+                                            <span class="stats-small__label text-uppercase name">Pay Back</span>
+                                            <h6 class="stats-small__value count my-3">0,037s</h6>
+                                        </div>
+                                        <div class="stats-small__data">
+                                            <span
+                                                class="stats-small__percentage stats-small__percentage--decrease">99,387%</span>
+                                        </div>
+                                    </div>
+                                    <canvas height="120" class="blog-overview-stats-small-5"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg col-md-6 col-sm-6 mb-4">
+                            <div class="stats-small stats-small--1 card card-small">
+                                <div class="card-body p-0 d-flex online_me">
+                                    <div class="d-flex flex-column m-auto">
+                                        <div class="stats-small__data text-center">
+                                            <span class="stats-small__label text-uppercase name">Pay Back DB</span>
+                                            <h6 class="stats-small__value count my-3">0,901s</h6>
+                                        </div>
+                                        <div class="stats-small__data">
+                                            <span
+                                                class="stats-small__percentage stats-small__percentage--decrease">98.657%</span>
+                                        </div>
+                                    </div>
+                                    <canvas height="120" class="blog-overview-stats-small-6"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg col-md-6 col-sm-6 mb-4">
+                            <div class="stats-small stats-small--1 card card-small">
+                                <div class="card-body p-0 d-flex online_me">
+                                    <div class="d-flex flex-column m-auto">
+                                        <div class="stats-small__data text-center">
+                                            <span class="stats-small__label text-uppercase name">Caronte</span>
+                                            <h6 class="stats-small__value count my-3">0,005s</h6>
+                                        </div>
+                                        <div class="stats-small__data">
+                                            <span
+                                                class="stats-small__percentage stats-small__percentage--increase">99,495%</span>
+                                        </div>
+                                    </div>
+                                    <canvas height="120" class="blog-overview-stats-small-7"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-6 mb-4">
+                            <div class="stats-small stats-small--1 card card-small">
+                                <div class="card-body p-0 d-flex online_me">
+                                    <div class="d-flex flex-column m-auto">
+                                        <div class="stats-small__data text-center">
+                                            <span class="stats-small__label text-uppercase name">Kairos</span>
+                                            <h6 class="stats-small__value count my-3">0,021s</h6>
+                                        </div>
+                                        <div class="stats-small__data">
+                                            <span
+                                                class="stats-small__percentage stats-small__percentage--decrease">3.8%</span>
+                                        </div>
+                                    </div>
+                                    <canvas height="120" class="blog-overview-stats-small-8"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-6 mb-4">
+                            <div class="stats-small stats-small--1 card card-small">
+                                <div class="card-body p-0 d-flex online_me">
+                                    <div class="d-flex flex-column m-auto">
+                                        <div class="stats-small__data text-center">
+                                            <span class="stats-small__label text-uppercase name">Person</span>
+                                            <h6 class="stats-small__value count my-3">0,035s</h6>
+                                        </div>
+                                        <div class="stats-small__data">
+                                            <span
+                                                class="stats-small__percentage stats-small__percentage--increase">97,354%</span>
+                                        </div>
+                                    </div>
+                                    <canvas height="120" class="blog-overview-stats-small-9"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-12 mb-4">
+                            <div class="stats-small stats-small--1 card card-small">
+                                <div class="card-body p-0 d-flex online_me">
+                                    <div class="d-flex flex-column m-auto">
+                                        <div class="stats-small__data text-center">
+                                            <span class="stats-small__label text-uppercase name">Person DB</span>
+                                            <h6 class="stats-small__value count my-3">0,037s</h6>
+                                        </div>
+                                        <div class="stats-small__data">
+                                            <span
+                                                class="stats-small__percentage stats-small__percentage--decrease">99,387%</span>
+                                        </div>
+                                    </div>
+                                    <canvas height="120" class="blog-overview-stats-small-10"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Small Stats Blocks -->
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="vendor/js/jquery-3.3.1.min.js"></script>
+    <script src="vendor/js//bootstrap.min.js"></script>
+    <script src="vendor/js/Chart.min.js"></script>
+    <script src="vendor/js/shards.min.js"></script>
+    <script src="scripts/app/main.js"></script>
+</body>
+
+</html>

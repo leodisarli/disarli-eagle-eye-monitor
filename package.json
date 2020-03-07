@@ -1,0 +1,30 @@
+{
+  "name": "disarli-eagle-eye-monitor",
+  "version": "1.0.0",
+  "description": "A high-quality & free services monitoring project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leodisarli/disarli-eagle-eye-monitor.git"
+  },
+  "keywords": [
+    "monitor",
+    "microservices",
+    "services"
+  ],
+  "author": "Leonardo Di Sarli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leodisarli/disarli-eagle-eye-monitor/issues"
+  },
+  "homepage": "https://github.com/leodisarli/disarli-eagle-eye-monitor#readme",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "ioredis": "^4.14.1",
+    "request": "^2.88.0"
+  }
+}
